@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import pageObjects from "../pageObjects/test.js"
+const pageObjectsPage = new pageObjects();
+Cypress.Commands.add('calculateOperation', ( firstNumber, SeccondNumber , operation) => { 
+    pageObjectsPage.number1Field().clear().type(firstNumber)
+    pageObjectsPage.number2Field().clear().type(SeccondNumber)
+    pageObjectsPage.selectOperationDropdown(operation)
+    pageObjectsPage.calculateButton().click()
+ })

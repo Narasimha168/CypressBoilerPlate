@@ -1,5 +1,3 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "text": "The following page is a very basic calculator - I know you have one on your phone, so why do you need another one?"
 }
